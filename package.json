@@ -1,0 +1,9 @@
+{
+  "type": "module",
+  "scripts": {
+    "post-due": "node scripts/post_due_bluesky.mjs"
+  },
+  "dependencies": {
+    "@atproto/api": "^0.15.0"
+  }
+}
