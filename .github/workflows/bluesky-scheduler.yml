@@ -1,8 +1,5 @@
 name: Bluesky Scheduler
 
-env:
-  DRY_RUN: "true"
-
 on:
   schedule:
     - cron: "*/15 * * * *"
