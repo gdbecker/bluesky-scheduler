@@ -135,7 +135,8 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-11T23:59:34.251Z"
   },
   {
     "id": "notice-writer-2026-06-12-013",
