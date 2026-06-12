@@ -1,0 +1,266 @@
+[
+  {
+    "id": "notice-writer-2026-06-15-022-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-15T07:18:00-04:00",
+    "posts": [
+      "Field note: Most notice problems seem like communication problems at first. But the deeper issue is often accountability. People want to know what was sent, when it was sent, and where the record lives."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-15-023-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-15T13:11:00-04:00",
+    "posts": [
+      "Something I've noticed while researching community operations: sending information is usually the visible task.",
+      "Tracking delivery, maintaining records, and answering follow-up questions is where much of the ongoing administrative work actually happens."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-15-024-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-15T19:27:00-04:00",
+    "posts": [
+      "A small example: a meeting notice goes out successfully. A week later someone asks whether they received it.",
+      "The communication itself took minutes. Confirming what happened afterward can take much longer."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-16-025-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-16T08:06:00-04:00",
+    "posts": [
+      "Field note: The administrative burden of a meeting often lasts longer than the meeting itself."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-16-026-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-16T12:43:00-04:00",
+    "posts": [
+      "Many boards and community groups are run by people doing their best with limited time.",
+      "When records are difficult to find, questions become emails, emails become follow-ups, and follow-ups become recurring tasks."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-16-027-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-16T18:41:00-04:00",
+    "posts": [
+      "One pattern that keeps appearing: people often assume a request for information means more communication is needed.",
+      "Sometimes it simply means existing information is difficult to access."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-17-028-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-17T07:29:00-04:00",
+    "posts": [
+      "Field note: Every repeated request for the same document is a clue. The document may exist. The workflow around finding it may not."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-17-029-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-17T14:16:00-04:00",
+    "posts": [
+      "A lot of operational friction comes from information living in multiple places.",
+      "An inbox, a shared drive, a folder, a spreadsheet, and someone's memory can all contain pieces of the same story. Reconstructing that story takes time."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-17-030-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-17T20:08:00-04:00",
+    "posts": [
+      "I've started thinking about notices differently. A notice isn't just a message.",
+      "It's often the beginning of a chain that includes questions, records, reminders, and future reference. That's why the surrounding process matters so much."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-18-031-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-18T08:11:00-04:00",
+    "posts": [
+      "Field note: Communication accountability is really about reducing uncertainty."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-18-032-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-18T13:57:00-04:00",
+    "posts": [
+      "One hidden cost of manual communication workflows is context loss.",
+      "The longer a process depends on memory, the harder it becomes for new volunteers, managers, or board members to understand what happened before they arrived."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-18-033-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-18T19:36:00-04:00",
+    "posts": [
+      "Future-state thought: someone should be able to answer a basic question about a notice without searching five different places.",
+      "That sounds small, but small improvements like that tend to remove a surprising amount of friction."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-19-034-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-19T07:47:00-04:00",
+    "posts": [
+      "Field note: Many notice workflows are really record-keeping workflows in disguise."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-19-035-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-19T12:34:00-04:00",
+    "posts": [
+      "A communication process becomes more complicated every time someone has to ask:",
+      "'Can you send that to me again?' The request is reasonable. The repetition is what creates the burden."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-19-036-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-19T18:52:00-04:00",
+    "posts": [
+      "Something that seems easy to underestimate:",
+      "Every extra email needed to locate information represents time, attention, and context switching for at least two people."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-20-037-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-20T09:02:00-04:00",
+    "posts": ["Field note: Clarity scales better than reminders."],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-20-038-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-20T14:21:00-04:00",
+    "posts": [
+      "A surprising lesson from community administration research:",
+      "The information people need often already exists. The challenge is making it discoverable when someone needs it."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-20-039-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-20T20:17:00-04:00",
+    "posts": [
+      "Good communication reduces confusion. Good documentation reduces repeated confusion.",
+      "The combination tends to create much calmer workflows over time."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-21-040-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-21T08:18:00-04:00",
+    "posts": [
+      "Field note: Small organizations frequently encounter enterprise-sized coordination problems."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-21-041-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-21T13:48:00-04:00",
+    "posts": [
+      "Checklist worth considering:",
+      "When a communication process feels frustrating, ask: Where is information stored? Who can access it? How is it updated? How is it found later? Those questions often reveal the real bottleneck."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  },
+  {
+    "id": "notice-writer-2026-06-21-042-bsky",
+    "theme": "Notice Writer",
+    "series": "Week 2 - Problem Analysis",
+    "scheduled_at": "2026-06-21T19:31:00-04:00",
+    "posts": [
+      "A pattern that's becoming clearer: many communication challenges are actually information management challenges.",
+      "The message matters. But being able to find, verify, and reference that message later matters too."
+    ],
+    "media": [],
+    "alt": [],
+    "status": "queued"
+  }
+]
