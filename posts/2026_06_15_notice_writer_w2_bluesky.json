@@ -78,7 +78,8 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-16T23:17:46.035Z"
   },
   {
     "id": "notice-writer-2026-06-17-028-bsky",
