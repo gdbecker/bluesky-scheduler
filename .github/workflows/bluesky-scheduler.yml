@@ -27,11 +27,13 @@ jobs:
       - name: Post due Bluesky posts
         run: npm run post-due
         env:
-          BLUESKY_IDENTIFIER: ${{ secrets.BLUESKY_IDENTIFIER }}
-          BLUESKY_APP_PASSWORD: ${{ secrets.BLUESKY_APP_PASSWORD }}
+          BLUESKY_GDD_IDENTIFIER: ${{ secrets.BLUESKY_GDD_IDENTIFIER }}
+          BLUESKY_GDD_APP_PASSWORD: ${{ secrets.BLUESKY_GDD_APP_PASSWORD }}
+          BLUESKY_EDGE_IDENTIFIER: ${{ secrets.BLUESKY_EDGE_IDENTIFIER }}
+          BLUESKY_EDGE_APP_PASSWORD: ${{ secrets.BLUESKY_EDGE_APP_PASSWORD }}
 
       - name: Commit posted status updates
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Mark Bluesky posts as posted"
-          file_pattern: posts/*.json
+          file_pattern: posts/**/*.json

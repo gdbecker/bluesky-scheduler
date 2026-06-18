@@ -1,6 +1,7 @@
 [
   {
     "id": "notice-writer-2026-06-15-022-bsky",
+    "account": "garretts_dev_desk",
     "theme": "Notice Writer",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-15T07:18:00-04:00",
@@ -15,6 +16,7 @@
   {
     "id": "notice-writer-2026-06-15-023-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-15T13:11:00-04:00",
     "posts": [
@@ -29,6 +31,7 @@
   {
     "id": "notice-writer-2026-06-15-024-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-15T19:27:00-04:00",
     "posts": [
@@ -43,6 +46,7 @@
   {
     "id": "notice-writer-2026-06-16-025-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-16T08:06:00-04:00",
     "posts": [
@@ -56,6 +60,7 @@
   {
     "id": "notice-writer-2026-06-16-026-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-16T12:43:00-04:00",
     "posts": [
@@ -70,6 +75,7 @@
   {
     "id": "notice-writer-2026-06-16-027-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-16T18:41:00-04:00",
     "posts": [
@@ -84,6 +90,7 @@
   {
     "id": "notice-writer-2026-06-17-028-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-17T07:29:00-04:00",
     "posts": [
@@ -97,6 +104,7 @@
   {
     "id": "notice-writer-2026-06-17-029-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-17T14:16:00-04:00",
     "posts": [
@@ -111,6 +119,7 @@
   {
     "id": "notice-writer-2026-06-17-030-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-17T20:08:00-04:00",
     "posts": [
@@ -125,6 +134,7 @@
   {
     "id": "notice-writer-2026-06-18-031-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-18T08:11:00-04:00",
     "posts": [
@@ -138,6 +148,7 @@
   {
     "id": "notice-writer-2026-06-18-032-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-18T13:57:00-04:00",
     "posts": [
@@ -151,6 +162,7 @@
   {
     "id": "notice-writer-2026-06-18-033-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-18T19:36:00-04:00",
     "posts": [
@@ -164,6 +176,7 @@
   {
     "id": "notice-writer-2026-06-19-034-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-19T07:47:00-04:00",
     "posts": [
@@ -176,6 +189,7 @@
   {
     "id": "notice-writer-2026-06-19-035-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-19T12:34:00-04:00",
     "posts": [
@@ -189,6 +203,7 @@
   {
     "id": "notice-writer-2026-06-19-036-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-19T18:52:00-04:00",
     "posts": [
@@ -202,11 +217,10 @@
   {
     "id": "notice-writer-2026-06-20-037-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-20T09:02:00-04:00",
-    "posts": [
-      "Field note: Clarity scales better than reminders."
-    ],
+    "posts": ["Field note: Clarity scales better than reminders."],
     "media": [],
     "alt": [],
     "status": "queued"
@@ -214,6 +228,7 @@
   {
     "id": "notice-writer-2026-06-20-038-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-20T14:21:00-04:00",
     "posts": [
@@ -227,6 +242,7 @@
   {
     "id": "notice-writer-2026-06-20-039-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-20T20:17:00-04:00",
     "posts": [
@@ -240,6 +256,7 @@
   {
     "id": "notice-writer-2026-06-21-040-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-21T08:18:00-04:00",
     "posts": [
@@ -252,6 +269,7 @@
   {
     "id": "notice-writer-2026-06-21-041-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-21T13:48:00-04:00",
     "posts": [
@@ -265,6 +283,7 @@
   {
     "id": "notice-writer-2026-06-21-042-bsky",
     "theme": "Notice Writer",
+    "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-21T19:31:00-04:00",
     "posts": [

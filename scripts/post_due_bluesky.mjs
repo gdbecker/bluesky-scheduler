@@ -5,29 +5,33 @@ import { BskyAgent, RichText } from "@atproto/api";
 const POSTS_DIR = "posts";
 const DRY_RUN = process.env.DRY_RUN === "true";
 
-const identifier = process.env.BLUESKY_IDENTIFIER;
-const password = process.env.BLUESKY_APP_PASSWORD;
+const ACCOUNTS = {
+  garrett_dev_desk: {
+    identifier: process.env.BLUESKY_GDD_IDENTIFIER,
+    password: process.env.BLUESKY_GDD_APP_PASSWORD,
+  },
+  edge_studio: {
+    identifier: process.env.BLUESKY_EDGE_IDENTIFIER,
+    password: process.env.BLUESKY_EDGE_APP_PASSWORD,
+  },
+};
 
-if (!identifier || !password) {
-  throw new Error("Missing BLUESKY_IDENTIFIER or BLUESKY_APP_PASSWORD.");
-}
-
-const agent = new BskyAgent({
-  service: "https://bsky.social"
-});
-
-await agent.login({
-  identifier,
-  password
-});
+const agentCache = new Map();
 
 function getJsonFiles(dir) {
   if (!fs.existsSync(dir)) return [];
 
-  return fs
-    .readdirSync(dir)
-    .filter((file) => file.endsWith(".json"))
-    .map((file) => path.join(dir, file));
+  const entries = fs.readdirSync(dir, { withFileTypes: true });
+
+  return entries.flatMap((entry) => {
+    const fullPath = path.join(dir, entry.name);
+
+    if (entry.isDirectory()) {
+      return getJsonFiles(fullPath);
+    }
+
+    return entry.isFile() && entry.name.endsWith(".json") ? [fullPath] : [];
+  });
 }
 
 function getMimeType(filePath) {
@@ -40,8 +44,46 @@ function getMimeType(filePath) {
   throw new Error(`Unsupported image type: ${filePath}`);
 }
 
-async function uploadImages(media = [], alt = []) {
+async function getAgent(accountName) {
+  const account = ACCOUNTS[accountName];
+
+  if (!account) {
+    throw new Error(
+      `Unknown account "${accountName}". Expected one of: ${Object.keys(ACCOUNTS).join(", ")}`,
+    );
+  }
+
+  if (!account.identifier || !account.password) {
+    throw new Error(`Missing credentials for account "${accountName}".`);
+  }
+
+  if (agentCache.has(accountName)) {
+    return agentCache.get(accountName);
+  }
+
+  const agent = new BskyAgent({
+    service: "https://bsky.social",
+  });
+
+  await agent.login({
+    identifier: account.identifier,
+    password: account.password,
+  });
+
+  agentCache.set(accountName, agent);
+  return agent;
+}
+
+async function uploadImages(agent, media = [], alt = []) {
   if (!media.length) return undefined;
+
+  if (media.length > 4) {
+    throw new Error("Bluesky supports up to 4 images per post.");
+  }
+
+  if (alt.length && alt.length !== media.length) {
+    throw new Error("Media and alt arrays must have the same length.");
+  }
 
   const images = [];
 
@@ -59,24 +101,29 @@ async function uploadImages(media = [], alt = []) {
 
     images.push({
       image: uploaded.data.blob,
-      alt: alt[i] || ""
+      alt: alt[i] || "",
     });
   }
 
   return {
     $type: "app.bsky.embed.images",
-    images
+    images,
   };
 }
 
-async function createPostRecord(text, reply = undefined, embed = undefined) {
+async function createPostRecord(
+  agent,
+  text,
+  reply = undefined,
+  embed = undefined,
+) {
   const rt = new RichText({ text });
   await rt.detectFacets(agent);
 
   const record = {
     text: rt.text,
     facets: rt.facets,
-    createdAt: new Date().toISOString()
+    createdAt: new Date().toISOString(),
   };
 
   if (reply) record.reply = reply;
@@ -86,7 +133,7 @@ async function createPostRecord(text, reply = undefined, embed = undefined) {
     console.log("DRY RUN post:", JSON.stringify(record, null, 2));
     return {
       uri: `dry-run-uri-${Date.now()}`,
-      cid: `dry-run-cid-${Date.now()}`
+      cid: `dry-run-cid-${Date.now()}`,
     };
   }
 
@@ -94,11 +141,14 @@ async function createPostRecord(text, reply = undefined, embed = undefined) {
 
   return {
     uri: result.uri,
-    cid: result.cid
+    cid: result.cid,
   };
 }
 
 async function postThread(item) {
+  const accountName = item.account || "garretts_dev_desk";
+  const agent = await getAgent(accountName);
+
   if (!Array.isArray(item.posts) || item.posts.length === 0) {
     throw new Error(`Post ${item.id} has no posts array.`);
   }
@@ -109,7 +159,7 @@ async function postThread(item) {
     }
   }
 
-  const embed = await uploadImages(item.media, item.alt);
+  const embed = await uploadImages(agent, item.media, item.alt);
 
   let root = null;
   let parent = null;
@@ -122,13 +172,14 @@ async function postThread(item) {
         ? undefined
         : {
             root,
-            parent
+            parent,
           };
 
     const result = await createPostRecord(
+      agent,
       text,
       reply,
-      i === 0 ? embed : undefined
+      i === 0 ? embed : undefined,
     );
 
     if (i === 0) {
@@ -140,6 +191,7 @@ async function postThread(item) {
 
   item.status = DRY_RUN ? "dry_run" : "posted";
   item.posted_at = new Date().toISOString();
+  item.posted_account = accountName;
 }
 
 const now = new Date();
@@ -157,7 +209,9 @@ for (const file of files) {
     const scheduledAt = new Date(item.scheduled_at);
 
     if (item.status === "queued" && scheduledAt <= now) {
-      console.log(`Posting ${item.id}...`);
+      console.log(
+        `Posting ${item.id} to ${item.account || "garrett_dev_desk"}...`,
+      );
       await postThread(item);
       postedCount++;
       changed = true;
