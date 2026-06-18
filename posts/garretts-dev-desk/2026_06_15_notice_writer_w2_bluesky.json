@@ -157,7 +157,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-18T20:13:41.442Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "notice-writer-2026-06-18-033-bsky",
@@ -220,7 +222,9 @@
     "account": "garretts_dev_desk",
     "series": "Week 2 - Problem Analysis",
     "scheduled_at": "2026-06-20T09:02:00-04:00",
-    "posts": ["Field note: Clarity scales better than reminders."],
+    "posts": [
+      "Field note: Clarity scales better than reminders."
+    ],
     "media": [],
     "alt": [],
     "status": "queued"
