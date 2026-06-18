@@ -6,7 +6,7 @@ const POSTS_DIR = "posts";
 const DRY_RUN = process.env.DRY_RUN === "true";
 
 const ACCOUNTS = {
-  garrett_dev_desk: {
+  garretts_dev_desk: {
     identifier: process.env.BLUESKY_GDD_IDENTIFIER,
     password: process.env.BLUESKY_GDD_APP_PASSWORD,
   },
@@ -210,7 +210,7 @@ for (const file of files) {
 
     if (item.status === "queued" && scheduledAt <= now) {
       console.log(
-        `Posting ${item.id} to ${item.account || "garrett_dev_desk"}...`,
+        `Posting ${item.id} to ${item.account || "garretts_dev_desk"}...`,
       );
       await postThread(item);
       postedCount++;
