@@ -298,7 +298,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-21T18:14:54.222Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "notice-writer-2026-06-21-042-bsky",
