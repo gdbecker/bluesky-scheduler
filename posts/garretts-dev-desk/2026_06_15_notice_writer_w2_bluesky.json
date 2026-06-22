@@ -314,6 +314,8 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-22T00:03:20.571Z",
+    "posted_account": "garretts_dev_desk"
   }
 ]
