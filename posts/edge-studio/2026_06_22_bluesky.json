@@ -10,7 +10,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-23T18:08:30.123Z",
+    "posted_account": "edge_studio"
   },
   {
     "id": "edge-studio-2026-06-22-002",
@@ -24,7 +26,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-23T18:08:30.444Z",
+    "posted_account": "edge_studio"
   },
   {
     "id": "edge-studio-2026-06-23-001",
@@ -38,7 +42,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-23T18:08:30.600Z",
+    "posted_account": "edge_studio"
   },
   {
     "id": "edge-studio-2026-06-23-002",
@@ -53,7 +59,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-23T18:08:30.853Z",
+    "posted_account": "edge_studio"
   },
   {
     "id": "edge-studio-2026-06-24-001",
