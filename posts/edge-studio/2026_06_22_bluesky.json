@@ -10,7 +10,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-22-002",
@@ -24,7 +24,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-23-001",
@@ -38,7 +38,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-23-002",
@@ -53,7 +53,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-24-001",
@@ -68,7 +68,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-24-002",
@@ -82,7 +82,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-25-001",
@@ -96,7 +96,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-25-002",
@@ -110,7 +110,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-26-001",
@@ -124,7 +124,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-26-002",
@@ -138,7 +138,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-27-001",
@@ -152,7 +152,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-27-002",
@@ -166,7 +166,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-28-001",
@@ -180,7 +180,7 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   },
   {
     "id": "edge-studio-2026-06-28-002",
@@ -194,6 +194,6 @@
     ],
     "media": [],
     "alt": [],
-    "status": "planned"
+    "status": "queued"
   }
 ]
