@@ -156,7 +156,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-26T18:01:28.167Z",
+    "posted_account": "edge_studio"
   },
   {
     "id": "edge-studio-2026-06-27-001",
