@@ -277,7 +277,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-06-28T01:38:19.297Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "decision-fatigue-2026-06-28-019-bsky",
