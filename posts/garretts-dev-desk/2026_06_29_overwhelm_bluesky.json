@@ -308,7 +308,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-07-05T18:42:13.214Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "overwhelm-2026-07-05-021-bsky",
