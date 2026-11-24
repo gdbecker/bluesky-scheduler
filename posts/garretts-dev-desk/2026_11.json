@@ -16,7 +16,9 @@
       }
     ],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-11-24T16:01:14.444Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "pbi-support-metrics-02",
