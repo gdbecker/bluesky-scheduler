@@ -180,6 +180,7 @@ function expandPosts(posts, id) {
   return expanded;
 }
 
+
 async function uploadImages(agent, media = [], alt = []) {
   if (!Array.isArray(media) || !Array.isArray(alt)) {
     throw new Error("Media and alt must be arrays.");
@@ -200,7 +201,47 @@ async function uploadImages(agent, media = [], alt = []) {
   const images = [];
 
   for (let i = 0; i < media.length; i++) {
-    const filePath = media[i];
+    const mediaItem = media[i];
+
+    let filePath;
+    let altText;
+
+    // Original Bluesky format: media is a file path string.
+    if (typeof mediaItem === "string") {
+      filePath = mediaItem;
+      altText = alt[i] || "";
+    }
+
+    // Threads format: media is an object.
+    else if (
+      mediaItem !== null &&
+      typeof mediaItem === "object" &&
+      !Array.isArray(mediaItem)
+    ) {
+      const mediaType = mediaItem.type || "image";
+
+      if (mediaType !== "image") {
+        throw new Error(
+          `Unsupported media type: ${mediaType}. This scheduler currently supports images only.`
+        );
+      }
+
+      filePath = mediaItem.path;
+      altText = mediaItem.alt ?? alt[i] ?? "";
+    }
+
+    // Reject unsupported media formats.
+    else {
+      throw new Error(`Invalid media entry at index ${i}.`);
+    }
+
+    if (typeof filePath !== "string" || !filePath.trim()) {
+      throw new Error(`Missing or invalid media path at index ${i}.`);
+    }
+
+    if (typeof altText !== "string") {
+      throw new Error(`Invalid alt text at index ${i}.`);
+    }
 
     if (!fs.existsSync(filePath)) {
       throw new Error(`Media file not found: ${filePath}`);
@@ -209,17 +250,23 @@ async function uploadImages(agent, media = [], alt = []) {
     const encoding = getMimeType(filePath);
 
     if (DRY_RUN) {
-      console.log(`DRY RUN image: ${filePath} (${encoding})`);
+      console.log(
+        `DRY RUN image: ${filePath} (${encoding})`
+      );
+      console.log(`DRY RUN alt text: ${altText}`);
       continue;
     }
 
-    const uploaded = await agent.uploadBlob(fs.readFileSync(filePath), {
-      encoding,
-    });
+    console.log(`Uploading image: ${filePath}`);
+
+    const uploaded = await agent.uploadBlob(
+      fs.readFileSync(filePath),
+      { encoding }
+    );
 
     images.push({
       image: uploaded.data.blob,
-      alt: alt[i] || "",
+      alt: altText,
     });
   }
 
@@ -230,6 +277,7 @@ async function uploadImages(agent, media = [], alt = []) {
         images,
       };
 }
+
 
 async function createPostRecord(agent, text, reply, embed) {
   const rt = new RichText({ text });
