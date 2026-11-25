@@ -52,7 +52,9 @@
       }
     ],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-11-25T18:58:06.707Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "pbi-subscription-health-02",
