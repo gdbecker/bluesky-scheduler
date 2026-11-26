@@ -67,7 +67,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-11-26T04:55:10.436Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "pbi-financial-perspectives-01",
