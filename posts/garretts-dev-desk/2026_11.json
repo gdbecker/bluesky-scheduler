@@ -124,7 +124,9 @@
       }
     ],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-11-27T20:12:46.692Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "pbi-sales-operations-02",
@@ -137,7 +139,9 @@
     ],
     "media": [],
     "alt": [],
-    "status": "queued"
+    "status": "posted",
+    "posted_at": "2026-11-27T20:12:46.830Z",
+    "posted_account": "garretts_dev_desk"
   },
   {
     "id": "pbi-workforce-performance-01",
